@@ -1,0 +1,90 @@
+
+running 33 tests
+test a_401_over_http_expires_the_account_too ... chatd listening on /tmp/tinyclient-dc-1448849-0/chat.sock
+chatd: Discord: signed out: Discord ended the session.
+chatd: Discord: history: Discord signed you out. Sign in again.
+ok
+test a_challenge_stops_every_request_and_shows_on_the_account ... chatd listening on /tmp/tinyclient-dc-1448849-1/chat.sock
+chatd: Discord: history: Discord asked for a check tinyclient cannot do. Finish it in Discord, then try again.
+chatd: Discord: typing: Discord asked for a check tinyclient cannot do. Finish it in Discord, then try again.
+chatd: Discord: history: Discord asked for a check tinyclient cannot do. Finish it in Discord, then try again.
+ok
+test a_dropped_socket_resumes_and_a_refused_token_expires_the_account ... chatd listening on /tmp/tinyclient-dc-1448849-2/chat.sock
+chatd: Discord: WebSocket protocol error: Connection reset without closing handshake
+chatd: Discord: signed out: Discord ended the session.
+chatd: Discord: history: Discord signed you out. Sign in again.
+ok
+test a_rate_limit_that_is_not_json_is_waited_out_from_its_headers_and_tried_once_more ... chatd listening on /tmp/tinyclient-dc-1448849-3/chat.sock
+chatd: Discord: typing: Rate limited: try again in 2 s.
+ok
+test a_ready_of_real_size_connects_quickly_within_the_memory_budget_and_is_not_kept ... chatd listening on /tmp/tinyclient-dc-1448849-4/chat.sock
+ok
+test a_run_of_refusals_stops_every_request_and_says_so ... chatd listening on /tmp/tinyclient-dc-1448849-5/chat.sock
+chatd: Discord: history: Discord refused too many requests. tinyclient asks again in 10 min.
+ok
+test a_voice_message_and_a_gif_from_tenor_are_attachments_fetched_only_from_discord ... chatd listening on /tmp/tinyclient-dc-1448849-6/chat.sock
+ok
+test a_waiting_profile_never_holds_up_a_send_a_superseded_one_is_dropped_and_reads_are_acked_once_per_three_seconds ... chatd listening on /tmp/tinyclient-dc-1448849-7/chat.sock
+ok
+test bench_member_viewport_without_gui ... ignored, standalone daemon latency benchmark; run with --ignored --nocapture
+test calls_ring_in_and_voice_channels_are_joined_on_the_gateway ... chatd listening on /tmp/tinyclient-dc-1448849-8/chat.sock
+mediad: call ended, exiting
+ok
+test chatd_serves_before_the_build_is_read_and_remembers_the_last_one_read ... chatd listening on /tmp/tinyclient-dc-1448849-9/chat.sock
+chatd listening on /tmp/tinyclient-dc-1448849-9/chat.sock
+chatd listening on /tmp/tinyclient-dc-1448849-9/chat.sock
+ok
+test files_go_up_from_their_paths_with_the_senders_options_and_a_cancel_stops_them ... chatd listening on /tmp/tinyclient-dc-1448849-10/chat.sock
+ok
+test forwards_voice_messages_spoilers_stickers_and_replies_fill_the_model ... chatd listening on /tmp/tinyclient-dc-1448849-11/chat.sock
+ok
+test friendships_presence_and_profiles_are_asked_of_discord_only_when_the_user_does ... chatd listening on /tmp/tinyclient-dc-1448849-12/chat.sock
+ok
+test info_mute_leave_pins_and_the_shared_search_ask_discord_once_each_and_only_when_asked ... chatd listening on /tmp/tinyclient-dc-1448849-13/chat.sock
+ok
+test member_cache_reads_and_navigation_continue_during_stalled_history ... chatd listening on /tmp/tinyclient-dc-1448849-14/chat.sock
+ok
+test member_search_is_paced_per_server_and_remembered ... chatd listening on /tmp/tinyclient-dc-1448849-15/chat.sock
+ok
+test member_viewport_changed_while_offline_is_delivered_after_resume ... ignored, known failure: issue #42; viewport queued offline is discarded on resume
+test messages_map_to_the_one_model_and_follow_live_events ... chatd listening on /tmp/tinyclient-dc-1448849-16/chat.sock
+chatd: Discord: media embed:1300000010000000010:0: The server answered 401.
+chatd: Discord: media att:8001: The file is no longer there (404).
+chatd: Discord: media att:8001:thumb: The file is no longer there (404).
+chatd: Discord: media att:8002: The file is no longer there (404).
+ok
+test missing_member_pages_never_block_a_new_viewport_or_move_its_subscription ... chatd listening on /tmp/tinyclient-dc-1448849-17/chat.sock
+ok
+test pictures_come_at_the_size_drawn_from_renewed_addresses_as_the_same_browser ... chatd listening on /tmp/tinyclient-dc-1448849-18/chat.sock
+chatd: Discord: media att:lost:thumb: The file is no longer there (404).
+chatd: Discord: media att:lost:thumb: The file is no longer there (404).
+ok
+test reactions_edits_and_deletes_go_to_discord_and_the_store_follows_its_word ... chatd listening on /tmp/tinyclient-dc-1448849-19/chat.sock
+ok
+test reactions_follow_the_channels_permissions_and_what_they_refuse_never_reaches_discord ... chatd listening on /tmp/tinyclient-dc-1448849-20/chat.sock
+ok
+test reading_forward_and_jumping_ask_discord_once_and_what_was_deleted_meanwhile_goes ... chatd listening on /tmp/tinyclient-dc-1448849-21/chat.sock
+ok
+test ready_fills_spaces_trees_people_and_unread_state ... chatd listening on /tmp/tinyclient-dc-1448849-22/chat.sock
+ok
+test sending_echoes_once_and_failures_say_why ... chatd listening on /tmp/tinyclient-dc-1448849-23/chat.sock
+ok
+test servers_channels_people_and_settings_follow_live_events ... chatd listening on /tmp/tinyclient-dc-1448849-24/chat.sock
+ok
+test signing_out_ends_the_session_on_discord_before_it_is_forgotten ... chatd listening on /tmp/tinyclient-dc-1448849-25/chat.sock
+ok
+test the_home_follows_discords_own_folders_mutes_opt_in_requests_threads_and_plan ... chatd listening on /tmp/tinyclient-dc-1448849-26/chat.sock
+ok
+test the_space_on_screen_is_the_only_one_subscribed ... chatd listening on /tmp/tinyclient-dc-1448849-27/chat.sock
+ok
+test three_refused_sessions_in_a_row_stop_the_asking_until_the_user_does_something ... chatd listening on /tmp/tinyclient-dc-1448849-28/chat.sock
+chatd: Discord: gateway closed: 4009 Authentication failed.
+chatd: Discord: invalid type: integer `7`, expected a string at line 1 column 24
+chatd: Discord: gateway closed: 4009 Session timed out.
+ok
+test typing_appears_expires_and_is_paced_on_the_way_out ... chatd listening on /tmp/tinyclient-dc-1448849-29/chat.sock
+ok
+test who_may_see_a_channel_follows_roles_membership_and_categories_live ... chatd listening on /tmp/tinyclient-dc-1448849-30/chat.sock
+ok
+
+test result: ok. 31 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 212.23s

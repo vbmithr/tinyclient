@@ -1,0 +1,7 @@
+
+running 1 test
+test bench_member_subscription_burst_without_gui ... chatd listening on /tmp/tinyclient-dc-1456011-0/chat.sock
+BENCH burst_watch_count=301 submit_ms=30.730 subscription_frames=100 latest_delivered_within_500ms=false pending_read_ms=0.989
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 34 filtered out; finished in 0.56s

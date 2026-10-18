@@ -66,6 +66,7 @@ pub struct Download {
 /// One window of a member list.
 #[derive(Debug, Clone)]
 pub struct Members {
+    pub pending: bool,
     pub sections: Vec<MemberSection>,
     pub members: Vec<Person>,
 }

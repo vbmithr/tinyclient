@@ -1,0 +1,15 @@
+
+running 1 test
+chatd listening on /tmp/tinyclient-dc-1453535-0/chat.sock
+
+thread 'member_viewport_selected_before_ready_is_subscribed_after_connect' (1453542) panicked at crates/chatd/tests/discord.rs:3050:9:
+initial READY never reconciled the viewport selected before guild metadata existed
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test member_viewport_selected_before_ready_is_subscribed_after_connect ... FAILED
+
+failures:
+
+failures:
+    member_viewport_selected_before_ready_is_subscribed_after_connect
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 33 filtered out; finished in 2.02s

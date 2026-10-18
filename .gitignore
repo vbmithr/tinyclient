@@ -5,3 +5,6 @@
 /dist
 /.direnv/
 /.envrc.local
+
+# Historical session snapshot excludes nested build caches too.
+**/target/

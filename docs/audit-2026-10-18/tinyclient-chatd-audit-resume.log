@@ -1,0 +1,16 @@
+
+running 1 test
+chatd listening on /tmp/tinyclient-dc-1449351-0/chat.sock
+chatd: Discord: WebSocket protocol error: Connection reset without closing handshake
+
+thread 'member_viewport_changed_while_offline_is_delivered_after_resume' (1449358) panicked at crates/chatd/tests/discord.rs:3025:9:
+resumed gateway never received the viewport selected while offline
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test member_viewport_changed_while_offline_is_delivered_after_resume ... FAILED
+
+failures:
+
+failures:
+    member_viewport_changed_while_offline_is_delivered_after_resume
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 32 filtered out; finished in 2.74s

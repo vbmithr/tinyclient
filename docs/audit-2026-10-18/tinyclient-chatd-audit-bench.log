@@ -1,0 +1,21 @@
+
+running 1 test
+test bench_member_viewport_without_gui ... chatd listening on /tmp/tinyclient-dc-1453809-0/chat.sock
+BENCH members=100 cached n=300 p50_ms=0.334 p95_ms=0.476 p99_ms=0.562 max_ms=0.781
+BENCH members=100 missing n=300 p50_ms=0.141 p95_ms=0.211 p99_ms=0.241 max_ms=0.265
+BENCH members=100 daemon_rss_kb=18288
+chatd listening on /tmp/tinyclient-dc-1453809-1/chat.sock
+BENCH members=10000 cached n=300 p50_ms=0.314 p95_ms=0.496 p99_ms=0.586 max_ms=0.668
+BENCH members=10000 missing n=300 p50_ms=0.132 p95_ms=0.198 p99_ms=0.229 max_ms=0.268
+BENCH members=10000 30_viewports_ms=23.690 gateway_frames=30
+BENCH members=10000 fixture_sync_to_cache_ms=21.902
+BENCH members=10000 daemon_rss_kb=18328
+chatd listening on /tmp/tinyclient-dc-1453809-2/chat.sock
+BENCH members=1000000 cached n=300 p50_ms=0.357 p95_ms=0.551 p99_ms=0.654 max_ms=1.058
+BENCH members=1000000 missing n=300 p50_ms=0.136 p95_ms=0.206 p99_ms=0.264 max_ms=0.343
+BENCH members=1000000 30_viewports_ms=23.505 gateway_frames=30
+BENCH members=1000000 fixture_sync_to_cache_ms=21.697
+BENCH members=1000000 daemon_rss_kb=18280
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 33 filtered out; finished in 0.70s
